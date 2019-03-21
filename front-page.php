@@ -45,8 +45,8 @@ get_header(); ?>
 				while ( $query1->have_posts() ) {
 					$query1->the_post();
 					echo '<section class="section-nouvelles">';
-						echo '<li>' . get_the_title() . '</li>';
-						echo '<p>' . the_content() . '</p>';
+						echo '<h3 class="h3-nouvelles">' . get_the_title() . '</h3>';
+						echo '<p class="paragraphe-nouvelles">' . the_content() . '</p>';
 					echo '</section>';
 				}
 				
@@ -69,8 +69,8 @@ get_header(); ?>
 				while ( $query2->have_posts() ) {
 					$query2->the_post();
 					echo '<section class="section-evenements">';
-						echo '<li>' . get_the_title( $query2->post->ID ) . '</li>';
-						echo '<p>' . the_content() . '</p>';
+						echo '<h3 class="h3-evenements">' . get_the_title( $query2->post->ID ) . '</h3>';
+						echo '<p class="paragraphe-evenements">' . the_content() . '</p>';
 					echo '</section>';
 				}
 

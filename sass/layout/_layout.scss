@@ -13,6 +13,7 @@
         border-bottom:0.3em solid rgba(0,0,0, 0.7);
         padding-left:0.6em;
         padding-right:0.6em;
+        margin-bottom:1em;
     
         h3{
             color:white;
@@ -27,6 +28,18 @@
     .section-evenements:hover{
         color:white;
     }
+
+    .section-nouvelles{
+        background-image: linear-gradient(to right, rgba(255,255,255, 0.8), grey);
+        color:black;
+        margin:0 auto;
+        padding-left:2em;
+        padding-right:2em;
+        border-radius:1em;
+        margin-bottom:1em;
+        text-shadow: 0.05em 0.05em rgba(255, 255, 255, 0.8);	
+    }
+    
 }
 
 

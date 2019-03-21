@@ -44,10 +44,12 @@ get_header(); ?>
 				// The Loop
 				while ( $query1->have_posts() ) {
 					$query1->the_post();
-					echo '<section class="section-nouvelles">';
-						echo '<h3 class="h3-nouvelles">' . get_the_title() . '</h3>';
-						echo '<p class="paragraphe-nouvelles">' . the_content() . '</p>';
-					echo '</section>';
+					echo '<div class="conteneur">';
+						echo '<section class="section-nouvelles">';
+							echo '<h3 class="h3-nouvelles">' . get_the_title() . '</h3>';
+							echo '<p class="paragraphe-nouvelles">' . the_content() . '</p>';
+						echo '</section>';
+					echo '</div>';
 				}
 				
 				/* Restore original Post Data 
@@ -69,10 +71,10 @@ get_header(); ?>
 				while ( $query2->have_posts() ) {
 					$query2->the_post();
 					echo '<div class="conteneur">';
-					echo '<section class="section-evenements">';
-						echo '<h3 class="h3-evenements">' . get_the_title( $query2->post->ID ) . '</h3>';
-						echo '<p class="paragraphe-evenements">' . the_content() . '</p>';
-					echo '</section>';
+						echo '<section class="section-evenements">';
+							echo '<h3 class="h3-evenements">' . get_the_title( $query2->post->ID ) . '</h3>';
+							echo '<p class="paragraphe-evenements">' . the_content() . '</p>';
+						echo '</section>';
 					echo '</div>';
 				}
 

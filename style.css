@@ -547,7 +547,15 @@ span {
 /*--------------------------------------------------------------
 # layout
 --------------------------------------------------------------*/
-.section-evenements {
+.conteneur {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+.conteneur .section-evenements {
   background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(rgba(255, 0, 0, 0.5)));
   background-image: linear-gradient(to bottom, grey, rgba(255, 0, 0, 0.5));
   color: rgba(255, 255, 255, 0.8);
@@ -559,16 +567,32 @@ span {
   padding-right: 0.6em;
 }
 
-.section-evenements h3 {
+.conteneur .section-evenements h3 {
   color: white;
   text-shadow: 0.1em 0.1em rgba(255, 0, 0, 0.3);
 }
 
-.section-evenements p:nth-of-type(1) {
+.conteneur .section-evenements p:nth-of-type(1) {
   border-bottom: 0.3em dotted rgba(0, 0, 0, 0.6);
 }
 
-.section-evenements:hover {
+.conteneur .section-evenements:hover {
   color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .conteneur {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .conteneur {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

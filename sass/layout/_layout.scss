@@ -30,7 +30,7 @@
     }
 
     .section-nouvelles{
-        background-image: linear-gradient(to right, rgba(255,255,255, 0.8), grey);
+        background-image: linear-gradient(to right, rgba(255,255,255, 0.8),  rgba(255,255,255, 0.6), grey);
         color:black;
         margin:0 auto;
         padding-left:2em;
@@ -38,7 +38,15 @@
         border-radius:1em;
         margin-bottom:1em;
         text-shadow: 0.05em 0.05em rgba(255, 255, 255, 0.8);	
+       
+        h3{
+            text-shadow: 0.07em 0.07em rgba(255, 0, 0, 0.3);	
+            border-left: 0.15em solid rgba(255, 0, 0, 0.7);
+            padding-left:0.4em;
+        }
     }
+
+   
     
 }
 

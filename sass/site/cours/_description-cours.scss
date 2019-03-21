@@ -1,0 +1,32 @@
+svg{
+    color:rgba(255, 0, 0, 0.3);
+}
+
+span{
+    color:white;
+    opacity:0.8;
+}
+
+.post-navigation .nav-links a .meta-nav{
+   color:black;
+   text-shadow: 0.05em 0.05em rgba(255, 0, 0, 0.4); 
+}
+
+.widget a{
+    color:white;
+    opacity:0.8;
+}
+
+.widget a:hover{
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color:rgba(0, 0, 0, 0.5);
+    box-shadow:0.2em 0.2em rgba(255, 0, 0, 0.3);
+}
+
+.button, button, input[type="button"], input[type="reset"], input[type="submit"]:hover {
+    background-color: black;
+    box-shadow:0.2em 0.2em rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,45 @@
+.menu a:hover {
+  -webkit-animation-name: hoverNav;
+          animation-name: hoverNav;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hoverNav {
+  0% {
+    background-color: #DEC8F6;
+  }
+  25% {
+    background-image: -webkit-gradient(linear, right top, left top, from(white), color-stop(#DEC8F6), color-stop(#DEC8F6), color-stop(#DEC8F6), to(#DEC8F6));
+    background-image: linear-gradient(to left, white, #DEC8F6, #DEC8F6, #DEC8F6, #DEC8F6);
+  }
+  50% {
+    background-image: -webkit-gradient(linear, right top, left top, from(white), color-stop(white), to(#DEC8F6));
+    background-image: linear-gradient(to left, white, white, #DEC8F6);
+  }
+  100% {
+    background-color: white;
+    color: #ffcce0;
+  }
+}
+
+@keyframes hoverNav {
+  0% {
+    background-color: #DEC8F6;
+  }
+  25% {
+    background-image: -webkit-gradient(linear, right top, left top, from(white), color-stop(#DEC8F6), color-stop(#DEC8F6), color-stop(#DEC8F6), to(#DEC8F6));
+    background-image: linear-gradient(to left, white, #DEC8F6, #DEC8F6, #DEC8F6, #DEC8F6);
+  }
+  50% {
+    background-image: -webkit-gradient(linear, right top, left top, from(white), color-stop(white), to(#DEC8F6));
+    background-image: linear-gradient(to left, white, white, #DEC8F6);
+  }
+  100% {
+    background-color: white;
+    color: #ffcce0;
+  }
+}
+/*# sourceMappingURL=anim_hoverNav.css.map */

@@ -1,0 +1,16 @@
+// Featured image styles
+
+.site-header.featured-image {
+	.site-branding {
+		display:flex;
+		flex-direction:column;
+	}
+
+	.site-branding .site-title{
+		color:white;
+	}
+	.site-branding .site-description{
+		color:red;
+	}
+	
+}

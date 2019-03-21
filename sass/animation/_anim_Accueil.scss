@@ -1,0 +1,39 @@
+.site-branding > .site-title a{
+    opacity:0;
+}
+
+.Anim_site-header{
+        animation: animSiteHeader 3s;
+        /*background-color: red;*/
+}
+
+.Anim_site-title{
+    animation:animSiteTitle 1s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+.Anim_paraghTitreArticle{
+    animation: animParaghTitreArticle 1s;
+	animation-fill-mode: forwards;
+}
+    
+    @keyframes animSiteHeader {
+        from {
+            transform: translateX(-100vw);    
+        }
+    
+        to {
+            transform: translateX(0%);
+        }
+    }
+    
+    @keyframes animSiteTitle {
+        from {
+            opacity:0;
+        }
+    
+        to {
+            opacity:1;
+        }
+    }
